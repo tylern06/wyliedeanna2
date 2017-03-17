@@ -112,7 +112,7 @@ ul {
 }
 /*!---------- SECTIONS ----------*/
 section {
-  padding: 120px 0;
+  padding: 40px 0;
   background: #fff;
   overflow: hidden;
   position: relative;
@@ -123,7 +123,7 @@ section .container {
 }
 @media all and (max-width: 767px) {
   section {
-    padding: 60px 0;
+    padding: 20px 0;
   }
 }
 section.fullscreen {
@@ -371,7 +371,7 @@ a:active {
   opacity: 0;
 }
 div.background-image-holder.push-down {
-  top: 50px;
+  top: 120px;
 }
 div.background-image-holder.swing {
   background-position: 50% 50% !important;
@@ -758,16 +758,16 @@ nav.light.scrolled .line-3 {
 }
 /*!---------- STORY ----------*/
 .story-1 {
-  padding-bottom: 60px;
+  /*padding-bottom: 60px;*/
 }
 .story-1 .feature {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 .story-1 h2 {
   margin-bottom: 20px;
 }
 .story-1 h6 {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
   color: #c59b75;
 }
 .story-1 img {

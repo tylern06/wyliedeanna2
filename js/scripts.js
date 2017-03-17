@@ -169,12 +169,12 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     //     accessToken: '36200597.5cf1534.1489b4ae75de49c7bf993b312ea3124d',
     //     clientID: '5cf15348e2a54d879d3865c4b93a3505'
     // };
-    var feed = new Instafeed({
-         get: 'tagged',
-         tagName: 'awesome',
-         clientId: '5cf15348e2a54d879d3865c4b93a3505',
-         accessToken: '36200597.5cf1534.1489b4ae75de49c7bf993b312ea3124d'
-     });
+    // var feed = new Instafeed({
+    //      get: 'tagged',
+    //      tagName: 'awesome',
+    //      clientId: '5cf15348e2a54d879d3865c4b93a3505',
+    //      accessToken: '36200597.5cf1534.1489b4ae75de49c7bf993b312ea3124d'
+    //  });
     //  feed.run();
     // $('.instafeed').each(function() {
     //     $(this).children('ul').spectragram('getUserFeed', {
