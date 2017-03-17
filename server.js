@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use(express.static(path.join(__dirname, "./node_modules")));
 // Setting our Views Folder Directory
-app.use(express.static(path.join(__dirname, "./client")));
+app.use(express.static(path.join(__dirname, "./")));
 
 //use pseudo path to equal the full path
 app.use('/lightgallerycss', express.static(__dirname + '/node_modules/lightgallery/dist/css')); // redirect lightgallery
