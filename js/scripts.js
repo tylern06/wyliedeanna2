@@ -27,18 +27,18 @@ $(document).ready(function() {
 
     //scroll to top
     // ===== Scroll to Top ====
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+    //         $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    //     } else {
+    //         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    //     }
+    // });
+    // $('#return-to-top').click(function() {      // When arrow is clicked
+    //     $('body,html').animate({
+    //         scrollTop : 0                       // Scroll to top of body
+    //     }, 500);
+    // });
 
     // Mobile toggle
 
@@ -85,32 +85,32 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }
 
     // Append .background-image-holder <img>'s as CSS backgrounds
-
-    $('.background-image-holder').each(function() {
-        var imgSrc = $(this).children('img').attr('src');
-        $(this).css('background', 'url("' + imgSrc + '")');
-        $(this).children('img').hide();
-        // $(this).css('background-position', '50% 50%');
-    });
-
-    // Fade in background images
-
-    setTimeout(function() {
-        $('.background-image-holder').each(function() {
-            $(this).addClass('fadeIn');
-        });
-        $('.header.fadeContent').each(function() {
-            $(this).addClass('fadeIn');
-        });
-    }, 200);
+    //
+    // $('.background-image-holder').each(function() {
+    //     var imgSrc = $(this).children('img').attr('src');
+    //     $(this).css('background', 'url("' + imgSrc + '")');
+    //     $(this).children('img').hide();
+    //     // $(this).css('background-position', '50% 50%');
+    // });
+    //
+    // // Fade in background images
+    //
+    // setTimeout(function() {
+    //     $('.background-image-holder').each(function() {
+    //         $(this).addClass('fadeIn');
+    //     });
+    //     $('.header.fadeContent').each(function() {
+    //         $(this).addClass('fadeIn');
+    //     });
+    // }, 200);
 
     // Scroll to ahref
-    $(document).on('click', '.inner-link', function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-    });
+    // $(document).on('click', '.inner-link', function(event){
+    //     event.preventDefault();
+    //     $('html, body').animate({
+    //         scrollTop: $( $.attr(this, 'href') ).offset().top
+    //     }, 500);
+    // });
 
 
     // Parallax scrolling

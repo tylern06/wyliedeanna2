@@ -54,11 +54,12 @@ var transporter = nodemailer.createTransport({
 
 app.get('/images', function(req, res) {
   var imgs = [];
-  var img_path = path.join(__dirname, './client/img/upload');
+  var img_path = path.join(__dirname, './img/uploads');
   fs.readdirSync(img_path).forEach(function(file){
     // imgs.push(file);
+    // console.log('reading images')
     if (file !== '.DS_Store') {
-      imgs.push('img/upload/'+ file);
+      imgs.push('img/uploads/'+ file);
     }
   });
   res.json({result: imgs});

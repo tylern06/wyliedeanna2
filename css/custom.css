@@ -106,3 +106,9 @@
 .add-margin-bottom {
   margin-bottom: 40px;
 }
+
+.demo-gallery {
+  margin-top: 80px;
+  padding: 10px;
+  background: white;
+}

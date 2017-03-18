@@ -11,21 +11,6 @@ myAppModule.controller('mainCtrl', function($scope, mainFactory, $location, $sce
 	// }
 })
 
-// myAppModule.directive('justified', ['$timeout', function ($timeout) {
-//     return {
-//         restrict: 'AE',
-//         link: function (scope, el, attrs) {
-//             scope.$watch('$last', function (n, o) {
-//                 if (n) {
-// 									console.log('enter justifiedGallery directive');
-//                     $timeout(function () { $(el[0]).justifiedGallery(); });
-//                 }
-//             });
-//         }
-//     };
-// }]);
-
-
 myAppModule.directive('lightgallery', function() {
   return {
     restrict: 'A',
