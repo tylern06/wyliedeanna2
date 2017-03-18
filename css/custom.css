@@ -44,6 +44,16 @@
   color: #c59b75;
 }
 
+.wedding-party {
+  padding-top: 20px;
+}
+
+.wedding-party p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
 @media (max-width: 767px) {
   img {
     display: block;
@@ -51,17 +61,48 @@
     max-width: 300px !important;
     height: auto;
   }
+
   .wedding-party p {
     max-width: 300px;
     margin: 0 auto;
+    text-align: center;
   }
+
+  .feature img {
+    display: block;
+    margin: 0 auto;
+  }
+  .accom-2 {
+    text-align: center;
+  }
+  .accom-2 h6 {
+    margin-top: 10px;
+  }
+  .accom-2 p {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .wedding-party h6 {
+    margin-top: 10px;
+  }
+
 }
 
 .wedding-party h6 {
   text-align: center;
-  /*max-width: 200px;*/
 }
 
 .add-margin-top {
   margin-top: 20px;
+}
+.add-padding-top {
+  padding-top: 80px;
+}
+
+.add-padding-bottom {
+  padding-bottom: 80px;
+}
+.add-margin-bottom {
+  margin-bottom: 40px;
 }
