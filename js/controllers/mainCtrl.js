@@ -24,8 +24,8 @@ myAppModule.directive('lightgallery', function() {
 
         setTimeout(function(){
           element.parent().justifiedGallery({
-            border: 6,
-            rowHeight: 150,
+            border: 10,
+            rowHeight: 250,
             margins: 10
           });
         }, 100);
