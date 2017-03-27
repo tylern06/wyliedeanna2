@@ -443,6 +443,9 @@ nav {
 .logo {
   float: left;
 }
+.logo span:hover {
+  cursor: pointer;
+}
 .logo span {
   font-size: 24px;
   text-transform: uppercase;
@@ -498,9 +501,10 @@ nav {
   .menu {
     width: 100%;
     margin-top: 20px;
-    transform: translateX(-50px);
+    text-align: center;
+    /*transform: translateX(-50px);
     -webkit-transform: translateX(-50px);
-    -moz-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);*/
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -515,9 +519,9 @@ nav {
     max-height: 600px;
   }
   .nav-open .menu {
-    transform: translateX(0);
+    /*transform: translateX(0);
     -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
+    -moz-transform: translateX(0);*/
   }
   .nav-open .menu li {
     opacity: 1;
@@ -531,10 +535,22 @@ nav {
   top: 22px;
   display: none;
 }
+
+.bar-open .line-2 {
+  opacity: 0;
+}
+.bar-open .line-1 {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+
+}.bar-open .line-3 {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
 .line-1,
 .line-2,
 .line-3 {
-  width: 45px;
+  width: 30px;
   height: 4px;
   background: #222;
   margin-bottom: 4px;
@@ -543,11 +559,11 @@ nav {
   -moz-transition: all 0.3s ease;
   opacity: .4;
 }
-.mobile-toggle:hover .line-1,
+/*.mobile-toggle:hover .line-1,
 .mobile-toggle:hover .line-2,
 .mobile-toggle:hover .line-3 {
   opacity: 1;
-}
+}*/
 @media all and (max-width: 768px) {
   .mobile-toggle {
     display: block;

@@ -7,7 +7,9 @@ myAppModule.config(function ($routeProvider, $locationProvider) {
 	.when('/gallery',{
 		templateUrl:'partials/gallery.html'
 	})
-
+	// .when('/lodging',{
+	// 	templateUrl:'partials/lodging.html'
+	// })
 	.otherwise({
 		redirectTo: '/home'
 	});

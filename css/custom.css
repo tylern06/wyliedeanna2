@@ -112,3 +112,18 @@
   padding: 10px;
   background: white;
 }
+
+@media (max-width: 767px) {
+  .hide-mobile {
+      display: none;
+    }
+}
+
+.hero-content h6 {
+  margin-bottom: 30px;
+}
+
+.wedding-party img {
+  max-width: 100% !important;
+  height: auto;
+}

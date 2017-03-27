@@ -16,7 +16,7 @@
     $(document).on('click', '.inner-link', function(event){
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 20
         }, 500);
     });
 
@@ -46,9 +46,7 @@
 </script>
 
 
-    <div class="main-container">
-
-
+  <div class="main-container">
 		<section class="header header-4 fullscreen burns-effect overlay">
 				<div class="image-slider">
 					<ul class="slides">
@@ -58,10 +56,11 @@
 							</div>
 
 							<div class="container">
-								<div class="row">
+								<div class="row hero-content">
 									<div class="col-sm-12 text-center">
 										<h1>Deanna &amp; Wylie</h1>
 										<h6>August 4th - Seattle, wa</h6>
+                    <a href="#rsvp" class="btn inner-link">RSVP Now</a>
 									</div>
 								</div>
 							</div>
@@ -73,10 +72,11 @@
 							</div>
 
 							<div class="container">
-								<div class="row">
+								<div class="row hero-content">
 									<div class="col-sm-12 text-center">
 										<h1>Deanna &amp; Wylie</h1>
 										<h6>AUGUST 4TH - SEATTLE, WA</h6>
+                    <a href="#rsvp" class="btn inner-link">RSVP Now</a>
 									</div>
 								</div>
 							</div>
@@ -88,10 +88,11 @@
 							</div>
 
 							<div class="container">
-								<div class="row">
+								<div class="row hero-content">
 									<div class="col-sm-12 text-center">
 										<h1>DEANNA &amp; WYLIE</h1>
 										<h6>AUGUST 4TH - SEATTLE, WA</h6>
+                    <a href="#rsvp" class="btn inner-link">RSVP Now</a>
 									</div>
 								</div>
 							</div>
@@ -104,14 +105,13 @@
 			<section class="story story-2 add-padding-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4 text-center">
+						<div class="col-sm-4 hide-mobile text-center">
 							<img alt="Photo" src="img/MP1_7204.jpg">
 						</div>
-            <div class="col-sm-4 text-center">
-
+            <div class="col-sm-4 hide-mobile text-center">
               <img alt="Photo" src="img/MP1_7373.jpg">
             </div>
-            <div class="col-sm-4 col-xs-hidden text-center">
+            <div class="col-sm-4 text-center">
               <img alt="Photo" src="img/MP1_7300.jpg">
             </div>
 					</div>
@@ -158,7 +158,7 @@
           <h2 class='text-center sub-heading add-margin-top add-margin-bottom'>The Bridesmaids</h2>
 
           <div class="row wedding-party">
-            <div class="col-sm-6 feature col-md-3">
+            <div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall2.jpg">
               <h6>Maid of Honor</h6>
               <h6>Desiree Durban</h6>
@@ -168,7 +168,7 @@
               </p>
             </div>
 
-            <div class="col-sm-6 feature col-md-3">
+            <div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall2.jpg">
               <h6>Matron of Honor</h6>
               <h6>TAHLIA NANPEI</h6>
@@ -176,13 +176,13 @@
                 Relation: Bride's friend since 9th grade. Tahlia will say I do just six days before Deanna.<br>
                 Relationship Status: Just Married
               </p>
-            </div><div class="col-sm-6 feature col-md-3">
+            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall2.jpg">
               <h6>Bridesmaid</h6>
               <h6>SABRINA NGUYEN</h6>
               <p>Relation: Bride's friend since 7th grade<br/>
                 Relationship Status: Finally engaged</p>
-            </div><div class="col-sm-6 feature col-md-3">
+            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall2.jpg">
               <h6>Bridesmaid</h6>
               <h6>ZOE FERNYHOUGH</h6>
@@ -196,7 +196,7 @@
           <h2 class='text-center sub-heading add-margin-top add-margin-bottom'>The Groomsmen</h2>
 
           <div class="row wedding-party">
-            <div class="col-sm-6 feature col-md-3">
+            <div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall1.jpg">
               <h6>Maid of Honor</h6>
               <h6>Desiree Durban</h6>
@@ -206,7 +206,7 @@
               </p>
             </div>
 
-            <div class="col-sm-6 feature col-md-3">
+            <div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall1.jpg">
               <h6>Matron of Honor</h6>
               <h6>TAHLIA NANPEI</h6>
@@ -214,13 +214,13 @@
                 Relation: Bride's friend since 9th grade. Tahlia will say I do just six days before Deanna.<br>
                 Relationship Status: Just Married
               </p>
-            </div><div class="col-sm-6 feature col-md-3">
+            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall1.jpg">
               <h6>Bridesmaid</h6>
               <h6>SABRINA NGUYEN</h6>
               <p>Relation: Bride's friend since 7th grade<br/>
                 Relationship Status: Finally engaged</p>
-            </div><div class="col-sm-6 feature col-md-3">
+            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
               <img alt="Photo" src="img/tall1.jpg">
               <h6>Bridesmaid</h6>
               <h6>ZOE FERNYHOUGH</h6>
@@ -240,7 +240,6 @@
 					<div class="row">
 						<div class="col-sm-12 text-center">
 							<img alt="Couple" src="img/tall3.jpg">
-							<img alt="Couple" src="img/tall4.jpg">
 						</div>
 					</div>
 
@@ -249,70 +248,70 @@
 							<h2>Ceremony &amp; Reception</h2>
 							<p><b>Salty's on Alki</b><br>5:00pm - Late<br>
 								1936 Harbor Ave SW<br>Seattle, WA 98126<br></p>
-							<a href="#" class="btn">RSVP Now</a>
+							<a href="#rsvp" class="btn inner-link">RSVP Now</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
       <a name="lodging" id="lodging"></a>
-			<section class="accom accom-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2>Where To Stay?</h2>
-						</div>
-					</div>
+      <section class="accom accom-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2>Where To Stay?</h2>
+            </div>
+          </div>
 
-					<div class="row">
-						<div class="col-sm-4 feature">
-							<a href="http://www.marriott.com/hotels/travel/seard-residence-inn-seattle-east-redmond/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
-								<img alt="Hotel" src="img/small5.jpg">
-							</a>
-							<h6>Residence Inn Seattle East/Redmond</h6>
-							<p>
-								Mention our names when making your reservation to recieve the group booking discount.
-							</p>
+          <div class="row">
+            <div class="col-sm-4 feature">
+              <a href="http://www.marriott.com/hotels/travel/seard-residence-inn-seattle-east-redmond/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
+                <img alt="Hotel" src="img/small5.jpg">
+              </a>
+              <h6>Residence Inn Seattle East/Redmond</h6>
+              <p>
+                Mention our names when making your reservation to recieve the group booking discount.
+              </p>
               <a href="https://www.google.com/maps/dir/''/7575+164th+Ave+NE,+Redmond,+WA+98052/@47.6721982,-122.1265326,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x549072ae3310f109:0xa8a2252b6843b739!2m2!1d-122.1221552!2d47.6721983" target="_blank">
                 <p>
                   7575 164th Ave NE <br />
                   Redmond, WA 98052
                 </p>
               </a>
-						</div>
+            </div>
 
-						<div class="col-sm-4 feature">
+            <div class="col-sm-4 feature">
               <a href="https://m.hyatt.com/mt/redmond.house.hyatt.com/en/hotel/home.html" target="_blank">
                 <img alt="Hotel" src="img/small6.jpg">
               </a>
-							<h6>Hyatt House</h6>
-							<p>
-								Limited cabins are available at Camp Krusty for groups with up to 8 guests.
-							</p>
+              <h6>Hyatt House</h6>
+              <p>
+                Limited cabins are available at Camp Krusty for groups with up to 8 guests.
+              </p>
               <a href="https://www.google.com/maps/dir//15785+Bear+Creek+Pkwy,+Redmond,+WA+98052/@47.6734362,-122.1325455,17z/data=!4m16!1m7!3m6!1s0x549072ac6c4284f5:0x831c22124494343c!2s15785+Bear+Creek+Pkwy,+Redmond,+WA+98052!3b1!8m2!3d47.6734362!4d-122.1303568!4m7!1m0!1m5!1m1!1s0x549072ac6c4284f5:0x831c22124494343c!2m2!1d-122.1303568!2d47.6734362" target="_blank">
                 <p>
                   15785 Bear Creek Parkway <br />
                   Redmond, WA 98052
                 </p>
               </a>
-						</div>
+            </div>
 
-						<div class="col-sm-4 feature">
-							<a href="http://www.westinbellevuehotel.com" target="_blank">
-								<img alt="Hotel" src="img/small7.jpg">
-							</a>
-							<h6>Westin Bellevue</h6>
-							<p>
-								A great option for the budget-concious with rooms for up to 4 guests.
-							</p>
+            <div class="col-sm-4 feature">
+              <a href="http://www.westinbellevuehotel.com" target="_blank">
+                <img alt="Hotel" src="img/small7.jpg">
+              </a>
+              <h6>Westin Bellevue</h6>
+              <p>
+                A great option for the budget-concious with rooms for up to 4 guests.
+              </p>
               <a href="https://www.google.com/maps/dir//600+Bellevue+Way+NE,+Bellevue,+WA+98004/@47.6164494,-122.2030066,17z/data=!4m16!1m7!3m6!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2s600+Bellevue+Way+NE,+Bellevue,+WA+98004!3b1!8m2!3d47.6164494!4d-122.2008179!4m7!1m0!1m5!1m1!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2m2!1d-122.2008179!2d47.6164494" target="_blank">
                 <p>
                   600 Bellevue Way NE <br />
                   Bellevue, WA 98004
                 </p>
               </a>
-						</div>
-					</div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-sm-4 feature">
               <a href="http://www.marriott.com/hotels/travel/bvudt-courtyard-seattle-bellevue-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
@@ -360,8 +359,8 @@
               </a>
             </div>
           </div>
-				</div>
-			</section>
+        </div>
+      </section>
 
       <a name="registry" id="registry"></a>
 			<section class="registry registry-1 registry-3 overlay-light">

@@ -4,10 +4,10 @@ $(document).ready(function() {
 
     // Smooth scroll to inner links
 
-    $('.inner-link').smoothScroll({
-        offset: -59,
-        speed: 800
-    });
+    // $('.inner-link').smoothScroll({
+    //     offset: -59,
+    //     speed: 800
+    // });
 
     // Add scrolled class to nav
 
@@ -43,7 +43,14 @@ $(document).ready(function() {
     // Mobile toggle
 
     $('.mobile-toggle').click(function() {
+        _this = $(this);
+        _this.toggleClass('bar-open');
         $('nav').toggleClass('nav-open');
+
+        $('.inner-link').on('click', function(e) {
+          _this.removeClass('bar-open');
+          $('nav').removeClass('nav-open');
+        })
     });
 
     $('.menu li a').click(function() {
