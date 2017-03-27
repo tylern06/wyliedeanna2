@@ -46,7 +46,7 @@
 </script>
 
 
-  <div class="main-container">
+  <div class="main-container" ng-controller='countCtrl'>
 		<section class="header header-4 fullscreen burns-effect overlay">
 				<div class="image-slider">
 					<ul class="slides">
@@ -55,12 +55,16 @@
 								<img alt="Background image" class="background-image" src="img/MP1_7488.jpg">
 							</div>
 
-							<div class="container">
+							<div class="container" ng-controller='countCtrl'>
 								<div class="row hero-content">
 									<div class="col-sm-12 text-center">
 										<h1>Deanna &amp; Wylie</h1>
 										<h6>August 4th - Seattle, wa</h6>
                     <a href="#rsvp" class="btn inner-link">RSVP Now</a>
+                    <timer end-time="{{endTime}}">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer>
+                  <div class="">
+                    {{test}}
+                  </div>
 									</div>
 								</div>
 							</div>
@@ -266,9 +270,9 @@
           <div class="row">
             <div class="col-sm-4 feature">
               <a href="http://www.marriott.com/hotels/travel/seard-residence-inn-seattle-east-redmond/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
-                <img alt="Hotel" src="img/small5.jpg">
+                <!-- <img alt="Hotel" src="img/small5.jpg"> -->
+                <h6>Residence Inn Seattle East/Redmond</h6>
               </a>
-              <h6>Residence Inn Seattle East/Redmond</h6>
               <p>
                 Mention our names when making your reservation to recieve the group booking discount.
               </p>
@@ -282,9 +286,9 @@
 
             <div class="col-sm-4 feature">
               <a href="https://m.hyatt.com/mt/redmond.house.hyatt.com/en/hotel/home.html" target="_blank">
-                <img alt="Hotel" src="img/small6.jpg">
+                <h6>Hyatt House</h6>
+                <!-- <img alt="Hotel" src="img/small6.jpg"> -->
               </a>
-              <h6>Hyatt House</h6>
               <p>
                 Limited cabins are available at Camp Krusty for groups with up to 8 guests.
               </p>
@@ -298,9 +302,9 @@
 
             <div class="col-sm-4 feature">
               <a href="http://www.westinbellevuehotel.com" target="_blank">
-                <img alt="Hotel" src="img/small7.jpg">
+                <h6>Westin Bellevue</h6>
+                <!-- <img alt="Hotel" src="img/small7.jpg"> -->
               </a>
-              <h6>Westin Bellevue</h6>
               <p>
                 A great option for the budget-concious with rooms for up to 4 guests.
               </p>
@@ -315,9 +319,9 @@
           <div class="row">
             <div class="col-sm-4 feature">
               <a href="http://www.marriott.com/hotels/travel/bvudt-courtyard-seattle-bellevue-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
-                <img alt="Hotel" src="img/small7.jpg">
+                <h6>Courtyard Marriot: Bellevue</h6>
+                <!-- <img alt="Hotel" src="img/small7.jpg"> -->
               </a>
-              <h6>Courtyard Marriot: Bellevue</h6>
               <p>
                 A great option for the budget-concious with rooms for up to 4 guests.
               </p>
@@ -330,9 +334,9 @@
             </div>
             <div class="col-sm-4 feature">
               <a href="http://www.westinseattle.com" target="_blank">
-                <img alt="Hotel" src="img/small7.jpg">
+                <!-- <img alt="Hotel" src="img/small7.jpg"> -->
+                <h6>Westin: Seattle</h6>
               </a>
-              <h6>Westin: Seattle</h6>
               <p>
                 A great option for the budget-concious with rooms for up to 4 guests.
               </p>
@@ -345,9 +349,9 @@
             </div>
             <div class="col-sm-4 feature">
               <a href="https://m.hyatt.com/mt/olive8.hyatt.com/en/hotel/home.html" target="_blank">
-                <img alt="Hotel" src="img/small7.jpg">
+                <!-- <img alt="Hotel" src="img/small7.jpg"> -->
+                <h6>Hyatt at Olive 8</h6>
               </a>
-              <h6>Hyatt at Olive 8</h6>
               <p>
                 A great option for the budget-concious with rooms for up to 4 guests.
               </p>
