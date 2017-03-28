@@ -46,7 +46,7 @@
 </script>
 
 
-  <div class="main-container">
+  <div class="main-container" ng-controller='countCtrl'>
 		<section class="header header-4 fullscreen burns-effect overlay">
 				<div class="image-slider">
 					<ul class="slides">
@@ -55,13 +55,30 @@
 								<img alt="Background image" class="background-image" src="img/MP1_7488.jpg">
 							</div>
 
-							<div class="container" ng-controller='countCtrl'>
+							<div class="container">
 								<div class="row hero-content">
 									<div class="col-sm-12 text-center">
 										<h1>Deanna &amp; Wylie</h1>
 										<h6>August 4th - Seattle, wa</h6>
                     <a href="#rsvp" class="btn inner-link">RSVP Now</a>
-                    <!-- <timer end-time="{{endTime}}">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.</timer> -->
+                    <div class="clockdiv">
+                      <div>
+                        <span class="days">{{days}}</span>
+                        <div class="smalltext">Days</div>
+                      </div>
+                      <div>
+                        <span class="hours">{{hours}}</span>
+                        <div class="smalltext">Hours</div>
+                      </div>
+                      <div>
+                        <span class="minutes">{{minutes}}</span>
+                        <div class="smalltext">Minutes</div>
+                      </div>
+                      <div>
+                        <span class="seconds">{{seconds}}</span>
+                        <div class="smalltext">Seconds</div>
+                      </div>
+                    </div>
 									</div>
 								</div>
 							</div>
@@ -78,7 +95,25 @@
 										<h1>Deanna &amp; Wylie</h1>
 										<h6>AUGUST 4TH - SEATTLE, WA</h6>
                     <a href="#rsvp" class="btn inner-link">RSVP Now</a>
-									</div>
+                    <div class="clockdiv">
+                      <div>
+                        <span class="days">{{days}}</span>
+                        <div class="smalltext">Days</div>
+                      </div>
+                      <div>
+                        <span class="hours">{{hours}}</span>
+                        <div class="smalltext">Hours</div>
+                      </div>
+                      <div>
+                        <span class="minutes">{{minutes}}</span>
+                        <div class="smalltext">Minutes</div>
+                      </div>
+                      <div>
+                        <span class="seconds">{{seconds}}</span>
+                        <div class="smalltext">Seconds</div>
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
 						</li>
@@ -94,7 +129,25 @@
 										<h1>DEANNA &amp; WYLIE</h1>
 										<h6>AUGUST 4TH - SEATTLE, WA</h6>
                     <a href="#rsvp" class="btn inner-link">RSVP Now</a>
-									</div>
+                    <div class="clockdiv">
+                      <div>
+                        <span class="days">{{days}}</span>
+                        <div class="smalltext">Days</div>
+                      </div>
+                      <div>
+                        <span class="hours">{{hours}}</span>
+                        <div class="smalltext">Hours</div>
+                      </div>
+                      <div>
+                        <span class="minutes">{{minutes}}</span>
+                        <div class="smalltext">Minutes</div>
+                      </div>
+                      <div>
+                        <span class="seconds">{{seconds}}</span>
+                        <div class="smalltext">Seconds</div>
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
 						</li>
