@@ -338,9 +338,12 @@ a:active {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
 }
-.btn:hover {
-  background: #c59b75;
-  color: #fff;
+
+@media (min-width: 540px) {
+  .btn:hover {
+    background: #c59b75;
+    color: #fff;
+  }
 }
 .btn-white {
   color: #fff;
