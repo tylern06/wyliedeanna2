@@ -161,3 +161,11 @@
     padding-top: 5px;
     font-size: 16px;
 }
+
+textarea {
+  width: 100%;
+}
+
+#radio1 {
+  margin-top: 20px;
+}

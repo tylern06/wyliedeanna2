@@ -10,5 +10,12 @@ myAppModule.factory('mainFactory', function($http) {
       callback(images);
     })
   }
+
+  factory.sendForm = function(formData, callback) {
+    console.log('in sendform factory', formData)
+    $http.post('/rsvp', formData).success(function(output) {
+      callback(output)
+    })
+  }
   return factory;
 });

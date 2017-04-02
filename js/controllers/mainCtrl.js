@@ -1,15 +1,52 @@
-myAppModule.controller('mainCtrl', function($scope, mainFactory, $location, $sce) {
+myAppModule.controller('mainCtrl', function($scope, $rootScope, mainFactory, $location, $sce) {
 	$scope.images = [];
 	mainFactory.getImages(function(data){
 		console.log("All images:", data );
 		$scope.images = data;
 	})
 
+	//inGallery = false by default
+	$scope.clickGallery = function() {
+		console.log('gallery clicked');
+		$scope.inGallery = true;
+		$location.url('/gallery');
+		console.log($scope.inGallery);
+	}
+
+	$scope.clickHome = function() {
+		console.log('home clicked');
+		$scope.inGallery = false;
+		$location.url('/');
+		console.log($scope.inGallery);
+	}
+
+	$scope.home = function(link) {
+		$scope.inGallery = false;
+		console.log('link', link);
+		function goHome(cb) {
+			$location.url('/');
+			cb(link);
+		}
+		var callback = function(link) {
+			console.log('link', link);
+			// anchorSmoothScroll.scrollTo(link);
+		}
+			goHome(callback);
+	}
+
+
+	$scope.sendForm = function() {
+		console.log('sent form', $scope.form)
+		mainFactory.sendForm($scope.form, function(data) {
+			console.log('received form', data)
+		});
+	}
+
 	//add for html src
 	// for (var i = 0; i < $scope.images.length; i++) {
 	// 	$scope.images[i] = $sce.trustAsResourceUrl($scope.images[i]);
 	// }
-})
+});
 
 myAppModule.directive('lightgallery', function() {
   return {
@@ -17,6 +54,11 @@ myAppModule.directive('lightgallery', function() {
     link: function(scope, element, attrs) {
       if (scope.$last) {
 				console.log('enter lightGallery directive');
+				//a tag element attributes
+				// console.log('attr', attrs);
+				//jqLite-wrapped element of a tag
+				// console.log('element', element);
+
         // ng-repeat is completed
 				// element.justifiedGallery();
 				// element.parent().justifiedGallery();

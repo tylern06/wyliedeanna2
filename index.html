@@ -17,19 +17,29 @@
     <body>
 
 
-		<div class="nav-container"><nav class="nav nav-1 transparent scrolled fixed">
-				<a href="#Home" class="logo">
+		<div class="nav-container" ng-controller='mainCtrl'>
+      <nav class="nav nav-1 transparent scrolled fixed">
+				<a ng-click='clickHome()' class="logo">
 					<span>Deanna &amp; Wylie</span>
 				</a>
-				<ul class="menu">
+				<ul class="menu" ng-show='!inGallery'>
 					<!-- <li><a href="#Home" class="inner-link" target="default">Home</a></li> -->
           <li><a href="#story" class="inner-link" target="default">Our Story</a></li>
           <li><a href="#schedule" class="inner-link" target="default">Schedule</a></li>
           <li><a href="#lodging" class="inner-link" target="default">Lodging</a></li>
+          <li><a href="#transportation" class="inner-link" target="default">Transportation</a></li>
           <li><a href="#registry" class="inner-link" target="default">Registry</a></li>
-          <li><a href="#/gallery">Gallery</a></li>
+          <li class='gallery-links'><a ng-click="clickGallery()">Gallery</a></li>
           <li><a href="#rsvp" class="inner-link" target="default">Rsvp</a></li>
 				</ul>
+        <ul class="menu" ng-show='inGallery'>
+          <li class='gallery-links'><a ng-click="home('story')">Our Story</a></li>
+          <li class='gallery-links'><a ng-click="home('schedule')">Schedule</a></li>
+          <li class='gallery-links'><a ng-click="home('logding')">Lodging</a></li>
+          <li class='gallery-links'><a ng-click="home('registry')">Registry</a></li>
+          <li class='gallery-links'><a ng-click="clickGallery()">Gallery</a></li>
+          <li class='gallery-links'><a ng-click="home('rsvp')">Rsvp</a></li>
+        </ul>
 				<div class="mobile-toggle">
 					<div class="line-1"></div>
 					<div class="line-2"></div>
@@ -62,6 +72,7 @@
         <script src='bower_components/moment/min/moment.min.js'></script>
         <script src='bower_components/moment/min/locales.min.js'></script>
         <script src='bower_components/humanize-duration/humanize-duration.js'></script>
+        <script src='bower_components/ngSmoothScroll/dist/angular-smooth-scroll.min.js'></script>
         <script src="js/placeholders.min.js"></script>
         <script src="js/flexslider.min.js"></script>
         <script src="js/spectragram.min.js"></script>

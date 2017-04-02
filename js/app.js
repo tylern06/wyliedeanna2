@@ -1,7 +1,7 @@
-var myAppModule = angular.module('myApp', ['ngRoute', 'ngAnimate','timer']);
+var myAppModule = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 myAppModule.config(function ($routeProvider, $locationProvider) {
 	$routeProvider
-	.when('/home',{
+	.when('/',{
 		templateUrl: 'partials/home.html'
 	})
 	.when('/gallery',{
@@ -11,6 +11,6 @@ myAppModule.config(function ($routeProvider, $locationProvider) {
 	// 	templateUrl:'partials/lodging.html'
 	// })
 	.otherwise({
-		redirectTo: '/home'
+		redirectTo: '/'
 	});
 });

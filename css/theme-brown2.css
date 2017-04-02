@@ -536,6 +536,7 @@ nav {
   display: none;
 }
 
+/*animate hamburger menu*/
 .bar-open .line-2 {
   opacity: 0;
 }
@@ -1219,9 +1220,10 @@ nav.light.scrolled .line-3 {
 /*!---------- RSVP ----------*/
 form {
   position: relative;
+  /*width: 360px;*/
 }
 input {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 input[type="submit"]:focus {
   outline: none;
@@ -1270,19 +1272,26 @@ input[type="submit"]:focus {
   }
 }
 .radio-holder input {
-  height: 0;
+  /*height: 0;
   width: 0;
   overflow: hidden;
-  opacity: 0;
+  opacity: 0;*/
 }
 .radio-holder {
   cursor: pointer;
   display: inline-block;
 }
-.radio-holder:hover,
+
 .radio-holder.checked {
   background: #c59b75;
   color: #fff;
+}
+
+@media (min-width: 420px) {
+  .radio-holder:hover {
+    color: #fff;
+    background: #c59b75;
+  }
 }
 .radio-holder.naked {
   font-size: 12px;
@@ -1343,7 +1352,7 @@ input[type="submit"]:focus {
 .rsvp form input[type="text"]:focus {
   outline: none;
 }
-.rsvp form input[type="submit"] {
+.rsvp form input[type="submit"], textarea {
   border: 1px solid #c59b75;
   color: #c59b75;
   text-align: center;
@@ -1385,6 +1394,7 @@ input[type="submit"]:focus {
 }
 .rsvp-2 form input[type="text"] {
   margin-bottom: 5px;
+  color: #c59b75;
 }
 .rsvp-2 .form-wrapper {
   width: 475px;
@@ -1393,7 +1403,7 @@ input[type="submit"]:focus {
   padding: 60px 0;
 }
 .rsvp-2 .form-section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .rsvp-2 h6 {
   color: #777;

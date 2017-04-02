@@ -41,6 +41,20 @@
         $('.image-slider').flexslider({
             directionNav: false
         });
+
+        $("input[type=radio]").on('click', function(){
+            $("input[type=radio]").each(function(){
+              var _this = $(this);
+              if((_this).is(':checked')) {
+                _this.parent().addClass('checked');
+              }else {
+                _this.parent().removeClass('checked');
+
+              }
+
+            })
+        });
+
   })
 
 </script>
@@ -474,23 +488,23 @@
 
 					<div class="row">
 						<div class="text-center col-sm-12">
-							<div class="form-wrapper">
+							<!-- <div class="form-wrapper" ng-controller="mainCtrl">
 								<form class="form-email">
 									<div class="form-section">
-										<input type="text" name="name" class="validate-required" placeholder="Your Name / Names">
+										<input type="text" ng-model="form.name" placeholder="Your Name / Names">
 										<div class="radio-group">
-											<div class="radio-holder btn checked">
+											<div class="radio-holer btn" ng-click="radioInput('attending', $event)" >
+                        <input type="radio" value="attending">
 												<span>Can't Wait</span>
-												<input type="radio" name="rsvp" value="attending" checked="checked">
 											</div>
-											<div class="radio-holder btn">
+											<div class="radio-holder btn" ng-click="radioInput('not-attending', $event)" >
+                        <input type="radio" value="not-attending">
 												<span>Can't Come</span>
-												<input type="radio" name="rsvp" value="not-attending">
 											</div>
 										</div>
 									</div>
-                  <!-- meal -->
-									<!-- <div class="form-section">
+
+									<div class="form-section">
 										<h6>Meal Preference</h6>
 										<div class="radio-group">
 											<div class="radio-holder naked checked">
@@ -506,11 +520,11 @@
 												<input type="radio" name="meal" value="veg-gf">
 											</div>
 										</div>
-									</div> -->
-									<div class="form-section">
-										<input type="text" name="song" placeholder="Any Song Requests?">
 									</div>
-									<input type="submit" value="RSVP">
+									<div class="form-section">
+										<input type="text" ng-model="form.song" placeholder="Any Song Requests?">
+									</div>
+									<input type="submit" ng-submit='sendForm()' value="RSVP">
 									<div class="form-error">
 										<span>Please fill out all fields</span>
 									</div>
@@ -518,7 +532,44 @@
 										<span>Thanks for your RSVP!</span>
 									</div>
 								</form>
-							</div>
+							</div> -->
+              <div class="form-wrapper" ng-controller="mainCtrl">
+                <form class="form-email" ng-submit="sendForm()">
+                  <div class="form-section">
+                    <input type="text" ng-model="form.name" placeholder="Your Name / Names">
+                    <div id='radio1' class="radio-group">
+                      <div class="radio-holder btn checked">
+                        <input type="radio" name="rsvp" ng-model="form.rsvp"  ng-init="form.rsvp='attending'" value="attending"> Can't Wait<br>
+                      </div>
+                      <div class="radio-holder btn">
+                        <input type="radio" name="rsvp" ng-model="form.rsvp" value="not-attending"> Cant'Come <br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-section">
+                    <span>Number of Guests<br /></span>
+                    <select name="guests" ng-model="form.guests">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <div class="form-section">
+                    <textarea ng-model="form.song" placeholder="You'll see me on the dance floor when"></textarea>
+                  </div>
+                  <div class="form-section">
+                    <textarea ng-model="form.allergies" placeholder="Food Allergies?"></textarea>
+                  </div>
+                  <input type="submit" value="RSVP">
+                </form>
+              </div>
 						</div>
 					</div>
 				</div>
