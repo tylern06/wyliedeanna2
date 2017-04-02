@@ -16,6 +16,7 @@ app.use('/lightgallerycss', express.static(__dirname + '/node_modules/lightgalle
 app.use('/lightgalleryjs', express.static(__dirname + '/node_modules/lightgallery/dist/js')); // redirect lightgallery
 app.use('/lgthumbnailjs', express.static(__dirname + '/node_modules/lg-thumbnail/dist')); // redirect lightgallery
 app.use('/lgfullscreenjs', express.static(__dirname + '/node_modules/lg-fullscreen/dist')); // redirect lightgallery
+app.use('/uibootstrap', express.static(__dirname + '/node_modules/angular-ui-bootstrap/dist')); // redirect lightgallery
 
 // Setting our Views Folder Directory for EJS
 // app.set('views', path.join(__dirname, './views'));
