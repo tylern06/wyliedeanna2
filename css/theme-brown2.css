@@ -1004,7 +1004,7 @@ nav.light.scrolled .line-3 {
   }
 }
 .details-5 img {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   max-width: 340px;
 }
 .details-5 h2 {
@@ -1019,7 +1019,7 @@ nav.light.scrolled .line-3 {
     max-width: 100%;
   }
   .details-5 img:last-child {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
   }
   .details-5 br {
     display: block;
