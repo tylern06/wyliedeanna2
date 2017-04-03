@@ -171,5 +171,26 @@ textarea {
 }
 
 .schedule {
-  padding-top: 100px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /*padding-top: 100px;*/
+}
+
+.schedule #top-leaf {
+  position: absolute;
+  top: 0px;
+}
+
+
+.schedule #bottom-leaf {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.schedule .text-centr {
+  text-align: center;
 }
