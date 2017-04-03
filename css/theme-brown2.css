@@ -1397,10 +1397,11 @@ input[type="submit"]:focus {
   margin-bottom: 5px;
 }
 .rsvp-2 h1 {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .rsvp-2 p:last-of-type {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 .rsvp-2 form input[type="text"] {
   margin-bottom: 5px;
@@ -1413,7 +1414,7 @@ input[type="submit"]:focus {
   padding: 60px 0;
 }
 .rsvp-2 .form-section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .rsvp-2 h6 {
   color: #777;

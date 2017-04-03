@@ -99,6 +99,11 @@
 .add-padding-top {
   padding-top: 80px;
 }
+@media (max-width: 767px) {
+  .add-padding-top {
+    padding-top: 40px;
+  }
+}
 
 .add-padding-bottom {
   padding-bottom: 80px;

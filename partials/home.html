@@ -181,7 +181,7 @@
             <div class="col-sm-12">
               <div class="text-centr">
                 <h2>Ceremony &amp; Reception</h2>
-                <p><b>Salty's on Alki</b><br>Friday, August 4th<br>5:00pm - Late<br>
+                <p><b>Salty's on Alki Beach</b><br>Friday, August 4th<br>6:00PM-12:00AM<br>Attire: Summertime Fly<br>
                   <a href="https://www.google.com/maps/dir//1936+Harbor+Ave+SW,+Seattle,+WA+98126/@47.5865257,-122.4464596,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5490406d03944fbb:0x1297bfe1e5f83ec7!2m2!1d-122.3764203!2d47.586547" target="_blank">1936 Harbor Ave SW<br>Seattle, WA 98126</a> <br></p>
               </div>
             </div>
@@ -481,18 +481,17 @@
               <div class="form-wrapper" ng-controller="mainCtrl">
                 <form class="form-email" ng-submit="sendForm()">
                   <div class="form-section">
-                    <input type="text" ng-model="form.name" placeholder="Your Name / Names">
                     <div id='radio1' class="radio-group">
                       <div class="radio-holder btn checked">
-                        <input type="radio" name="rsvp" ng-model="form.rsvp"  ng-init="form.rsvp='attending'" value="attending"> Can't Wait<br>
+                        <input type="radio" name="rsvp" ng-model="form.rsvp"  ng-init="form.rsvp='attending'" value="attending">  Can't Wait<br>
                       </div>
                       <div class="radio-holder btn">
-                        <input type="radio" name="rsvp" ng-model="form.rsvp" value="not-attending"> Can't Come <br>
+                        <input type="radio" name="rsvp" ng-model="form.rsvp" value="not-attending">  Can't Come <br>
                       </div>
                     </div>
                   </div>
                   <div class="form-section">
-                    <span>Number of Guests<br /></span>
+                    <p>Number of Guests:<br></p>
                     <select name="guests" ng-model="form.guests">
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -507,6 +506,10 @@
                     </select>
                   </div>
                   <div class="form-section">
+                    <input type="text" ng-model="form.name" placeholder="Your Name / Names">
+                  </div>
+                  <div class="form-section">
+
                     <textarea ng-model="form.song" placeholder="You'll see me on the dance floor when"></textarea>
                   </div>
                   <div class="form-section">

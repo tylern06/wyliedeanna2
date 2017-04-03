@@ -33,7 +33,7 @@ myAppModule.controller('countCtrl', function($scope,$interval) {
   }
   var today =  new Date()
   //time of day out of 24 hours
-  var timeOfday=1000*60*60*17;
+  var timeOfday=1000*60*60*18;
   var wedding = new Date(Date.parse('Aug 04 2017') + timeOfday);
   initializeClock(wedding);
 });
