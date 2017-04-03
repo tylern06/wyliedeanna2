@@ -25,6 +25,13 @@ body {
   background: #c59b75;
   -webkit-backface-visibility: hidden;
 }
+
+a {
+  color: #c59b75;
+}
+a:hover {
+  color: #c59b75;
+}
 .main-container,
 .nav-container,
 .footer-container,
