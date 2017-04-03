@@ -1230,7 +1230,7 @@ nav.light.scrolled .line-3 {
 /*!---------- RSVP ----------*/
 form {
   position: relative;
-  /*width: 360px;*/
+  width: 360px;
 }
 input {
   /*-webkit-appearance: none;*/
@@ -1290,6 +1290,7 @@ input[type="submit"]:focus {
 .radio-holder {
   cursor: pointer;
   display: inline-block;
+  margin-right: 5px;
 }
 
 .radio-holder.checked {
@@ -1331,6 +1332,11 @@ input[type="submit"]:focus {
 .radio-holder.naked.checked span,
 .radio-holder.naked:hover span {
   border-color: #c59b75;
+}
+.radio-group {
+  /*margin: 0 auto;
+  text-align: center;
+  max-width: 500px;*/
 }
 .form-section {
   margin-bottom: 60px;
