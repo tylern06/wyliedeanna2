@@ -1023,8 +1023,11 @@ nav.light.scrolled .line-3 {
 
 .registry-1 img {
   max-width: 225px;
-  display: inline-block;
-  max-height: 120%; }
+  display: inline-block; }
+
+.registry-1 #wander {
+  position: relative;
+  bottom: 20px; }
 
 .registry-2 {
   padding-bottom: 60px; }
@@ -1550,6 +1553,27 @@ footer {
   .hide-mobile {
     display: none; } }
 
-@media (max-width: 500px) {
-  .clockdiv {
-    font-size: 18px; } }
+@media (max-width: 540px) {
+  form {
+    max-width: 100%; }
+  .countdown {
+    padding-top: 60px; }
+  select {
+    opacity: 0.2;
+    border: 1px solid gray; }
+  .clockdiv .days, .clockdiv .hours, .clockdiv .minutes, .clockdiv .seconds {
+    font-size: 22px; }
+  .clockdiv > div {
+    margin-right: 5px; }
+  .clockdiv div > span {
+    padding: 10px 15px; } }
+
+.timeline {
+  padding-bottom: 60px; }
+  .timeline h6 {
+    margin-bottom: 5px; }
+  .timeline .sub-heading {
+    color: #222; }
+  .timeline .top-row {
+    margin-bottom: 20px;
+    margin-top: 40px; }
