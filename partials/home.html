@@ -13,14 +13,6 @@
         }, 500);
     });
 
-    $(document).on('click', '.inner-link', function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - 50
-        }, 500);
-    });
-
-
         $('.background-image-holder').each(function() {
             var imgSrc = $(this).children('img').attr('src');
             $(this).css('background', 'url("' + imgSrc + '")');
@@ -61,117 +53,44 @@
 
 
   <div class="main-container" ng-controller='countCtrl'>
-		<section class="header header-4 fullscreen burns-effect overlay">
+		<section class="header header-4 fullscreen">
 				<div class="image-slider">
 					<ul class="slides">
 						<li>
-							<div class="background-image-holder push-left">
-								<img alt="Background image" class="background-image" src="img/Optimized-1.jpg">
-							</div>
-
-							<div class="container">
-								<div class="row hero-content">
-									<div class="col-sm-12 text-center">
-										<h1>August 4th</h1>
-                    <!-- <h1>Deanna &amp; Wylie</h1> -->
-										<!-- <h6>August 4th - Seattle, wa</h6> -->
-                    <a href="#rsvp" class="btn inner-link">RSVP</a>
-                    <div class="clockdiv">
-                      <div>
-                        <span class="days">{{days}}</span>
-                        <div class="smalltext">Days</div>
-                      </div>
-                      <div>
-                        <span class="hours">{{hours}}</span>
-                        <div class="smalltext">Hours</div>
-                      </div>
-                      <div>
-                        <span class="minutes">{{minutes}}</span>
-                        <div class="smalltext">Minutes</div>
-                      </div>
-                      <div>
-                        <span class="seconds">{{seconds}}</span>
-                        <div class="smalltext">Seconds</div>
-                      </div>
-                    </div>
-									</div>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<div class="background-image-holder swing">
-								<img alt="Background image" class="background-image" src="img/Optimized-2.jpg">
-							</div>
-
-							<div class="container">
-								<div class="row hero-content">
-									<div class="col-sm-12 text-center">
-                    <h1>August 4th</h1>
-										<!-- <h1>Deanna &amp; Wylie</h1> -->
-										<!-- <h6>AUGUST 4TH - SEATTLE, WA</h6> -->
-                    <a href="#rsvp" class="btn inner-link">RSVP</a>
-                    <div class="clockdiv">
-                      <div>
-                        <span class="days">{{days}}</span>
-                        <div class="smalltext">Days</div>
-                      </div>
-                      <div>
-                        <span class="hours">{{hours}}</span>
-                        <div class="smalltext">Hours</div>
-                      </div>
-                      <div>
-                        <span class="minutes">{{minutes}}</span>
-                        <div class="smalltext">Minutes</div>
-                      </div>
-                      <div>
-                        <span class="seconds">{{seconds}}</span>
-                        <div class="smalltext">Seconds</div>
-                      </div>
-                    </div>
-                  </div>
-								</div>
-							</div>
-						</li>
-
-						<li>
 							<div class="background-image-holder push-down">
 								<img alt="Background image" class="background-image" src="img/Optimized-3.jpg">
-							</div>
-
-							<div class="container">
-								<div class="row hero-content">
-									<div class="col-sm-12 text-center">
-                    <h1>August 4th</h1>
-										<!-- <h1>DEANNA &amp; WYLIE</h1> -->
-										<!-- <h6>AUGUST 4TH - SEATTLE, WA</h6> -->
-                    <a href="#rsvp" class="btn inner-link">RSVP</a>
-                    <div class="clockdiv">
-                      <div>
-                        <span class="days">{{days}}</span>
-                        <div class="smalltext">Days</div>
-                      </div>
-                      <div>
-                        <span class="hours">{{hours}}</span>
-                        <div class="smalltext">Hours</div>
-                      </div>
-                      <div>
-                        <span class="minutes">{{minutes}}</span>
-                        <div class="smalltext">Minutes</div>
-                      </div>
-                      <div>
-                        <span class="seconds">{{seconds}}</span>
-                        <div class="smalltext">Seconds</div>
-                      </div>
-                    </div>
-                  </div>
-								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
 
+      <section class='countdown'>
+        <div class="container">
+          <div class="row hero-content">
+            <div class="col-sm-12 text-center">
+              <div class="clockdiv">
+                <div>
+                  <span class="days">{{days}}</span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div>
+                  <span class="hours">{{hours}}</span>
+                  <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                  <span class="minutes">{{minutes}}</span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                  <span class="seconds">{{seconds}}</span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Venue -->
       <a name="schedule" id="schedule"></a>
       <section class="details details-5 add-padding-top">
@@ -191,226 +110,6 @@
 
       </section>
 
-      <a name="myAnchor" id="story"></a>
-			<section class="story story-2">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 hide-mobile text-center">
-							<img alt="Photo" src="img/Optimized-4.jpg">
-						</div>
-            <div class="col-sm-4 hide-mobile text-center">
-              <img alt="Photo" src="img/Optimized-5.jpg">
-            </div>
-            <div class="col-sm-4 text-center">
-              <img alt="Photo" src="img/Optimized-6.jpg">
-            </div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h2>How We Met</h2>
-							<!-- <h6>A little about how we fell in love</h6> -->
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center add-margin-bottom">
-							<p>
-                Deanna and Wylie know of each other from middle school. However, through the years and school moves they never became friends. When Deanna turned 21, Wylie attended her birthday party through mutal friends. They clicked and the rest was history.
-							</p>
-						</div>
-					</div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-              <h2>The Proposal</h2>
-              <!-- <h6>A little about how we fell in love</h6> -->
-            </div>
-          </div>
-          <div class="row">
-						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<p>
-                This past year, Deanna and Wylie traveled to Europe for the first time. They hung out at pubs in London, ate too many macarons in Paris, and discovered their love of tapas in Barcelona. One morning in Paris, Wylie took extra long to get ready… ironed his shirt and styled his hair just right. Little did Deanna know, he was to propose to her right at sunset atop the Eiffel Tower.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-      <!-- Bride and Groom -->
-      <section class="story story-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-              <h6>A little about the bridemaids and groomsmen`.</h6>
-            </div>
-          </div>
-          <!-- Bridesmaids -->
-          <h2 class='text-center sub-heading add-margin-top add-margin-bottom'>The Bridesmaids</h2>
-
-          <div class="row wedding-party">
-            <div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall2.jpg">
-              <h6>Maid of Honor</h6>
-              <h6>Desiree Durban</h6>
-              <p>
-                Relation: Bride's Older Sister<br />
-                Relationship Status: TBD
-              </p>
-            </div>
-
-            <div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall2.jpg">
-              <h6>Matron of Honor</h6>
-              <h6>TAHLIA NANPEI</h6>
-              <p>
-                Relation: Bride's friend since 9th grade. Tahlia will say I do just six days before Deanna.<br>
-                Relationship Status: Just Married
-              </p>
-            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall2.jpg">
-              <h6>Bridesmaid</h6>
-              <h6>SABRINA NGUYEN</h6>
-              <p>Relation: Bride's friend since 7th grade<br/>
-                Relationship Status: Finally engaged</p>
-            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall2.jpg">
-              <h6>Bridesmaid</h6>
-              <h6>ZOE FERNYHOUGH</h6>
-              <p>
-                Relation: Groom's younger sister OR soon-to-be sister-in-law<br />
-                Relationship Status: Single & has yellow fever
-              </p>
-            </div>
-          </div>
-          <!-- Groomsmen -->
-          <h2 class='text-center sub-heading add-margin-top add-margin-bottom'>The Groomsmen</h2>
-
-          <div class="row wedding-party">
-            <div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall1.jpg">
-              <h6>Maid of Honor</h6>
-              <h6>Desiree Durban</h6>
-              <p>
-                Relation: Bride's Older Sister<br />
-                Relationship Status: TBD
-              </p>
-            </div>
-
-            <div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall1.jpg">
-              <h6>Matron of Honor</h6>
-              <h6>TAHLIA NANPEI</h6>
-              <p>
-                Relation: Bride's friend since 9th grade. Tahlia will say I do just six days before Deanna.<br>
-                Relationship Status: Just Married
-              </p>
-            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall1.jpg">
-              <h6>Bridesmaid</h6>
-              <h6>SABRINA NGUYEN</h6>
-              <p>Relation: Bride's friend since 7th grade<br/>
-                Relationship Status: Finally engaged</p>
-            </div><div class="col-sm-6 col-xs-6 feature col-md-3">
-              <img alt="Photo" src="img/tall1.jpg">
-              <h6>Bridesmaid</h6>
-              <h6>ZOE FERNYHOUGH</h6>
-              <p>
-                Relation: Groom's younger sister OR soon-to-be sister-in-law<br />
-                Relationship Status: Single & has yellow fever
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <a name="lodging" id="lodging"></a>
-      <ui-accordion close-others="oneAtATime">
-        <section class="accom accom-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 text-center">
-                <h2>Where To Stay?</h2>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="panel-default" is-open="status.open">
-
-              </div>
-              <div class="col-sm-4 feature">
-                <a href="http://www.marriott.com/hotels/travel/seard-residence-inn-seattle-east-redmond/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
-                  <h6>Residence Inn Seattle East/Redmond</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir/7575+164th+Ave+NE,+Redmond,+WA+98052/@47.6721982,-122.1265326,16z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x549072ae3310f109:0xa8a2252b6843b739!2m2!1d-122.1221552!2d47.6721983" target="_blank">
-                  <p>
-                    7575 164th Ave NE <br />
-                    Redmond, WA 98052
-                  </p>
-                </a>
-              </div>
-
-              <div class="col-sm-4 feature">
-                <a href="https://m.hyatt.com/mt/redmond.house.hyatt.com/en/hotel/home.html" target="_blank">
-                  <h6>Hyatt House</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir//15785+Bear+Creek+Pkwy,+Redmond,+WA+98052/@47.6734362,-122.1325455,17z/data=!4m16!1m7!3m6!1s0x549072ac6c4284f5:0x831c22124494343c!2s15785+Bear+Creek+Pkwy,+Redmond,+WA+98052!3b1!8m2!3d47.6734362!4d-122.1303568!4m7!1m0!1m5!1m1!1s0x549072ac6c4284f5:0x831c22124494343c!2m2!1d-122.1303568!2d47.6734362" target="_blank">
-                  <p>
-                    15785 Bear Creek Parkway <br />
-                    Redmond, WA 98052
-                  </p>
-                </a>
-              </div>
-
-              <div class="col-sm-4 feature">
-                <a href="http://www.westinbellevuehotel.com" target="_blank">
-                  <h6>Westin Bellevue</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir//600+Bellevue+Way+NE,+Bellevue,+WA+98004/@47.6164494,-122.2030066,17z/data=!4m16!1m7!3m6!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2s600+Bellevue+Way+NE,+Bellevue,+WA+98004!3b1!8m2!3d47.6164494!4d-122.2008179!4m7!1m0!1m5!1m1!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2m2!1d-122.2008179!2d47.6164494" target="_blank">
-                  <p>
-                    600 Bellevue Way NE <br />
-                    Bellevue, WA 98004
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 feature">
-                <a href="http://www.marriott.com/hotels/travel/bvudt-courtyard-seattle-bellevue-downtown/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2" target="_blank">
-                  <h6>Courtyard Marriot: Bellevue</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir//600+Bellevue+Way+NE,+Bellevue,+WA+98004/@47.6164494,-122.2030066,17z/data=!4m16!1m7!3m6!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2s600+Bellevue+Way+NE,+Bellevue,+WA+98004!3b1!8m2!3d47.6164494!4d-122.2008179!4m7!1m0!1m5!1m1!1s0x54906c88ae3d704d:0x5dfab57c8b6586dd!2m2!1d-122.2008179!2d47.6164494" target="_blank">
-                  <p>
-                    11010 NE 8th Street <br />
-                    Bellevue, WA 98004
-                  </p>
-                </a>
-              </div>
-              <div class="col-sm-4 feature">
-                <a href="http://www.westinseattle.com" target="_blank">
-                  <h6>Westin: Seattle</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir//1900+5th+Ave,+Seattle,+WA+98101/@47.6136836,-122.3404298,17z/data=!4m16!1m7!3m6!1s0x5490154b6b527ad5:0x4bc5666dc3b9379b!2s1900+5th+Ave,+Seattle,+WA+98101!3b1!8m2!3d47.6136836!4d-122.3382411!4m7!1m0!1m5!1m1!1s0x5490154b6b527ad5:0x4bc5666dc3b9379b!2m2!1d-122.3382411!2d47.6136836" target="_blank">
-                  <p>
-                    1900 5th Ave <br />
-                    Seattle, WA 98101
-                  </p>
-                </a>
-              </div>
-              <div class="col-sm-4 feature">
-                <a href="https://m.hyatt.com/mt/olive8.hyatt.com/en/hotel/home.html" target="_blank">
-                  <!-- <img alt="Hotel" src="img/small7.jpg"> -->
-                  <h6>Hyatt at Olive 8</h6>
-                </a>
-                <a href="https://www.google.com/maps/dir//1635+8th+Ave,+Seattle,+WA+98101/@47.6137543,-122.3362907,17z/data=!4m16!1m7!3m6!1s0x5490154ac9477abf:0x956c9db1b453e3bc!2s1635+8th+Ave,+Seattle,+WA+98101!3b1!8m2!3d47.6137543!4d-122.334102!4m7!1m0!1m5!1m1!1s0x5490154ac9477abf:0x956c9db1b453e3bc!2m2!1d-122.334102!2d47.6137543" target="_blank">
-                  <p>
-                    1635 8th Ave <br />
-                    Seattle, WA 98101
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </ui-accordion>
       <a name="registry" id="registry"></a>
 			<section class="registry registry-1 registry-3 overlay-light">
 
@@ -460,10 +159,10 @@
                   <div class="form-section">
                     <div id='radio1' class="radio-group">
                       <div class="radio-holder btn checked">
-                        <input type="radio" name="rsvp" ng-model="form.rsvp"  ng-init="form.rsvp='attending'" value="attending">  Can't Wait<br>
+                        <input type="radio" name="rsvp" ng-model="form.rsvp"  ng-init="form.rsvp='attending'" value="attending"> <label for="rsvp"> Can't Wait</label><br>
                       </div>
                       <div class="radio-holder btn">
-                        <input type="radio" name="rsvp" ng-model="form.rsvp" value="not-attending">  Can't Come <br>
+                        <input type="radio" name="rsvp" ng-model="form.rsvp" value="not-attending"> <label for="rsvp">Can't Come</label>  <br>
                       </div>
                     </div>
                   </div>

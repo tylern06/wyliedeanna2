@@ -106,7 +106,6 @@
     top: 5px;
 }*/
 body {
-  background: #c59b75;
   -webkit-backface-visibility: hidden;
   font-family: "Libre Baskerville", "Georgia", Times New Roman, Time, serif;
   font-size: 14px;
@@ -116,9 +115,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  color: #c59b75; }
+  color: #096D65; }
   a:hover {
-    color: #c59b75;
+    color: #096D65;
     text-decoration: none;
     cursor: pointer !important; }
   a:visited {
@@ -183,7 +182,7 @@ nav.fixed {
   overflow: hidden; }
 
 body.body-bg {
-  background: #c59b75; }
+  background: #096D65; }
 
 body.boxed-layout .main-container {
   max-width: 1170px; }
@@ -241,7 +240,7 @@ ul {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: #c59b75;
+  background: #096D65;
   opacity: 0.2;
   top: 0;
   left: 0; }
@@ -277,7 +276,7 @@ section.fullscreen {
     -moz-transform: translateY(-50%); }
 
 section.bg-primary {
-  background: #c59b75; }
+  background: #096D65; }
   section.bg-primary h1 {
     color: #ffffff; }
   section.bg-primary h2 {
@@ -398,7 +397,7 @@ h6 {
       opacity: 1;
       cursor: pointer; }
       .menu li:hover a {
-        color: #c59b75; }
+        color: #096D65; }
 
 .logo {
   float: left; }
@@ -427,8 +426,8 @@ h6 {
   opacity: .5; }
 
 .btn {
-  border: 1px solid #c59b75;
-  color: #c59b75;
+  border: 1px solid #096D65;
+  color: #096D65;
   text-align: center;
   min-width: 160px;
   height: 55px;
@@ -447,8 +446,8 @@ h6 {
   color: #fff;
   border-color: #fff; }
   .btn-white:hover {
-    background: #c59b75;
-    border-color: #c59b75; }
+    background: #096D65;
+    border-color: #096D65; }
 
 .bg-secondary {
   background: #fcfcfc; }
@@ -460,7 +459,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: 1;
-  background: #c59b75;
+  background: #096D65;
   background-size: cover !important;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -612,7 +611,7 @@ nav.light.scrolled .line-3 {
 
 .header {
   padding: 0;
-  background: #c59b75; }
+  background: white; }
   .header h1 {
     color: #ffffff;
     font-size: 120px;
@@ -640,11 +639,11 @@ nav.light.scrolled .line-3 {
     border-color: #fff; }
     .header .btn:hover {
       background: #c59b75;
-      border-color: #c59b75; }
+      border-color: #096D65; }
 
 .header.light {
   padding: 0;
-  background: #fff; }
+  background: white; }
   .header.light h1 {
     color: #222222; }
   .header.light h2 {
@@ -706,7 +705,7 @@ nav.light.scrolled .line-3 {
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: #000000;
+  background: white;
   opacity: 0.1;
   top: 0;
   left: 0; }
@@ -715,7 +714,7 @@ nav.light.scrolled .line-3 {
   margin-bottom: 20px; }
 
 .story-1 h6 {
-  color: #c59b75; }
+  color: #096D65; }
 
 .story-1 img {
   margin-bottom: 20px; }
@@ -746,14 +745,14 @@ nav.light.scrolled .line-3 {
   margin-bottom: 20px; }
 
 .story-2 h6 {
-  color: #c59b75;
+  color: #096D65;
   margin-bottom: 30px; }
 
 .story-3 h1 {
   margin-bottom: 40px; }
 
 .story-3 h6 {
-  color: #c59b75;
+  color: #096D65;
   margin-bottom: 20px; }
 
 .story-3 p:last-of-type {
@@ -770,12 +769,12 @@ nav.light.scrolled .line-3 {
   .details-1 h2 {
     margin-bottom: 30px; }
   .details-1 h6 {
-    color: #c59b75;
+    color: #096D65;
     margin-bottom: 60px; }
   .details-1 .feature {
     margin-bottom: 60px; }
     .details-1 .feature h6 {
-      color: #c59b75;
+      color: #096D65;
       margin-bottom: 15px; }
     .details-1 .feature h4 {
       margin-bottom: 15px; }
@@ -843,7 +842,7 @@ nav.light.scrolled .line-3 {
   .details-3 .row:nth-of-type(1) p:last-of-type {
     margin-bottom: 60px; }
   .details-3 h5 {
-    color: #c59b75;
+    color: #096D65;
     margin-bottom: 20px; }
   .details-3 .feature {
     margin-bottom: 60px; }
@@ -856,7 +855,7 @@ nav.light.scrolled .line-3 {
   margin: 0 auto;
   margin-bottom: 60px; }
   .details-4 .feature h6 {
-    color: #c59b75;
+    color: #096D65;
     margin-bottom: 15px; }
   .details-4 .feature h4 {
     margin-bottom: 15px; }
@@ -865,7 +864,7 @@ nav.light.scrolled .line-3 {
   margin-bottom: 40px; }
 
 .details-4 h5 {
-  color: #c59b75;
+  color: #096D65;
   margin-bottom: 60px; }
 
 .details-4 p:last-of-type {
@@ -1004,7 +1003,7 @@ nav.light.scrolled .line-3 {
     display: inline-block;
     margin-bottom: 30px; }
   .accom-2 h6 {
-    color: #c59b75;
+    color: #096D65;
     margin-bottom: 15px; }
 
 .registry-1 h2 {
@@ -1071,9 +1070,11 @@ input[type="submit"]:focus {
   cursor: pointer;
   display: inline-block;
   margin-right: 5px; }
+  .radio-holder label {
+    margin-left: 10px; }
 
 .radio-holder.checked {
-  background: #c59b75;
+  background: #096D65;
   color: #fff; }
 
 .radio-holder.naked {
@@ -1085,7 +1086,7 @@ input[type="submit"]:focus {
   margin-right: -2px;
   font-family: "Lato";
   margin: 0 16px;
-  color: #c59b75;
+  color: #096D65;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1096,16 +1097,16 @@ input[type="submit"]:focus {
   .radio-holder.naked:hover {
     opacity: 1;
     background: none;
-    color: #c59b75; }
+    color: #096D65; }
     .radio-holder.naked:hover span {
-      border-color: #c59b75; }
+      border-color: #096D65; }
 
 .radio-holder.naked.checked {
   opacity: 1;
   background: none;
-  color: #c59b75; }
+  color: #096D65; }
   .radio-holder.naked.checked span {
-    border-color: #c59b75; }
+    border-color: #096D65; }
 
 .form-section {
   margin-bottom: 60px; }
@@ -1116,7 +1117,7 @@ input[type="submit"]:focus {
   .rsvp form input[type="text"] {
     height: 55px;
     background: #fcfcfc;
-    border: 1px solid #d6d6d6;
+    border: 1px solid #096D65;
     width: 100%;
     padding: 0 8px;
     text-align: center;
@@ -1130,8 +1131,8 @@ input[type="submit"]:focus {
     .rsvp form input[type="text"]:focus {
       outline: none; }
   .rsvp form input[type="submit"] {
-    border: 1px solid #c59b75;
-    color: #c59b75;
+    border: 1px solid #096D65;
+    color: #096D65;
     text-align: center;
     min-width: 160px;
     height: 55px;
@@ -1147,12 +1148,12 @@ input[type="submit"]:focus {
     background: none;
     font-size: 12px; }
     .rsvp form input[type="submit"]:hover {
-      background: #c59b75;
+      background: #096D65;
       color: #fff; }
 
 textarea {
-  border: 1px solid #c59b75;
-  color: #c59b75;
+  border: 1px solid #096D65;
+  color: #096D65;
   text-align: center;
   min-width: 160px;
   height: 55px;
@@ -1187,13 +1188,11 @@ textarea {
 
 .rsvp-2 form input[type="text"] {
   margin-bottom: 5px;
-  color: #c59b75; }
+  color: #096D65; }
 
 .rsvp-2 .form-wrapper {
   width: 475px;
-  margin: 0 auto;
-  background: #fcfcfc;
-  padding: 60px 0; }
+  margin: 0 auto; }
 
 .rsvp-2 .form-section {
   margin-bottom: 20px; }
@@ -1239,7 +1238,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #c59b75;
+  background: #096D65;
   background: rgba(197, 155, 117, 0.7);
   width: 50px;
   height: 50px;
@@ -1270,7 +1269,7 @@ footer {
     background: rgba(197, 155, 117, 0.9); }
 
 .sub-heading {
-  color: #c59b75; }
+  color: #096D65; }
 
 .wedding-party {
   padding-top: 20px; }
@@ -1302,21 +1301,26 @@ footer {
 .hero-content h6 {
   margin-bottom: 30px; }
 
+.countdown {
+  padding-top: 80px; }
+
 .clockdiv {
   margin-top: 30px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: #222222;
   text-align: center;
-  font-size: 22px; }
+  font-size: 36px; }
   .clockdiv > div {
-    padding: 10px;
+    margin-right: 20px;
     display: inline-block; }
   .clockdiv div > span {
-    padding: 5px 10px;
-    background: #c59b75;
-    border: 1px solid white; }
+    padding: 15px 30px;
+    border: 1px solid #aaa; }
+  .clockdiv .days, .clockdiv .hours, .clockdiv .minutes, .clockdiv .seconds {
+    font-size: 36px; }
 
 .smalltext {
+  margin-top: 30px;
   padding-top: 5px;
   font-size: 16px; }
 
@@ -1493,7 +1497,7 @@ footer {
 
 @media (min-width: 540px) {
   .btn:hover {
-    background: #c59b75;
+    background: #096D65;
     color: #fff; } }
 
 @media (max-width: 768px) {
@@ -1517,7 +1521,7 @@ footer {
 @media (min-width: 420px) {
   .radio-holder:hover {
     color: #fff;
-    background: #c59b75; } }
+    background: #096D65; } }
 
 @media (max-width: 767px) {
   img {
