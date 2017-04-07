@@ -1574,8 +1574,7 @@ footer {
   .countdown {
     padding-top: 60px; }
   select {
-    opacity: 0.2;
-    border: 1px solid gray; }
+    border: 1px solid #096D65; }
   .clockdiv .days, .clockdiv .hours, .clockdiv .minutes, .clockdiv .seconds {
     font-size: 22px; }
   .clockdiv > div {

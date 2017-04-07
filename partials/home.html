@@ -33,19 +33,6 @@
             directionNav: false
         });
 
-        $("input[type=radio]").on('click', function(){
-            $("input[type=radio]").each(function(){
-              var _this = $(this);
-              if((_this).is(':checked')) {
-                _this.parent().addClass('checked');
-              }else {
-                _this.parent().removeClass('checked');
-
-              }
-
-            })
-        });
-
   })
 
 </script>
