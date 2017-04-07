@@ -1017,8 +1017,6 @@ nav.light.scrolled .line-3 {
   padding-bottom: 60px; }
   .accom-2 .feature {
     margin-bottom: 60px; }
-  .accom-2 h2 {
-    margin-bottom: 60px; }
   .accom-2 img {
     display: inline-block;
     margin-bottom: 30px; }
@@ -1604,6 +1602,7 @@ footer {
     max-width: 140px !important;
     height: auto; } }
 
-.lodging-wrapper {
-  max-width: 200px;
-  margin: 0 auto; }
+.lodging-wrapper img {
+  max-width: 95%;
+  margin-top: 20px;
+  margin-bottom: 10px; }
