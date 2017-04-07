@@ -1595,7 +1595,8 @@ footer {
   .timeline .timeline-container {
     text-align: center; }
   .timeline .clearfix {
-    clear: both; }
+    clear: both;
+    margin-bottom: 80px; }
 
 @media (max-width: 767px) {
   .travel-wrapper img {
@@ -1606,3 +1607,7 @@ footer {
   max-width: 95%;
   margin-top: 20px;
   margin-bottom: 10px; }
+
+.proposal img {
+  margin-top: 20px;
+  margin-bottom: 20px; }
