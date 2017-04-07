@@ -1,3 +1,23 @@
+/**
+ * Responsive mixin. The media breakpoints are as defined in
+ * the twitter bootstrap framework and supports responding to:
+ * - phone
+ * - tablet
+ * - desktop
+ * - large
+ * - above-phone
+ * - above-tablet
+*/
+/**
+ * Responsive mixin. The media breakpoints are as defined in
+ * the twitter bootstrap framework and supports responding to:
+ * - phone
+ * - tablet
+ * - desktop
+ * - large
+ * - above-phone
+ * - above-tablet
+*/
 /*!
 // Contents
 // ------------------------------------------------
@@ -1548,8 +1568,6 @@ footer {
     .accom-2 p {
       max-width: 300px;
       margin: 0 auto; }
-  .add-padding-top {
-    padding-top: 40px; }
   .hide-mobile {
     display: none; } }
 
@@ -1577,3 +1595,19 @@ footer {
   .timeline .top-row {
     margin-bottom: 20px;
     margin-top: 40px; }
+  .timeline .timeline-wrapper {
+    max-width: 200px;
+    margin: 0 auto; }
+  .timeline .timeline-container {
+    text-align: center; }
+  .timeline .clearfix {
+    clear: both; }
+
+@media (max-width: 767px) {
+  .travel-wrapper img {
+    max-width: 140px !important;
+    height: auto; } }
+
+.lodging-wrapper {
+  max-width: 200px;
+  margin: 0 auto; }

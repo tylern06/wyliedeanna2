@@ -1,6 +1,6 @@
 myAppModule.controller('mainCtrl', function($scope, $rootScope, mainFactory, $location, $sce) {
 	$scope.images = [];
-	mainFactory.getImages(function(data){
+	 mainFactory.getImages(function(data){
 		console.log("All images:", data );
 		$scope.images = data;
 	})
@@ -15,30 +15,14 @@ myAppModule.controller('mainCtrl', function($scope, $rootScope, mainFactory, $lo
 
 	$scope.clickHome = function() {
 		console.log('home clicked');
-		$scope.inGallery = false;
 		$location.url('/');
-		console.log($scope.inGallery);
 	}
-
-	$scope.home = function(link) {
-		$scope.inGallery = false;
-		console.log('link', link);
-		function goHome(cb) {
-			$location.url('/');
-			cb(link);
-		}
-		var callback = function(link) {
-			console.log('link', link);
-			// anchorSmoothScroll.scrollTo(link);
-		}
-			goHome(callback);
-	}
-
 
 	$scope.sendForm = function() {
 		console.log('sent form', $scope.form)
 		mainFactory.sendForm($scope.form, function(data) {
 			console.log('received form', data)
+			$location.url('/confirmed');
 		});
 	}
 

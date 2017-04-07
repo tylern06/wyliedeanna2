@@ -16,6 +16,12 @@ myAppModule.config(function ($routeProvider, $locationProvider) {
 	.when('/gallery',{
 		templateUrl:'partials/gallery.html'
 	})
+	.when('/rsvp',{
+		templateUrl:'partials/rsvp.html'
+	})
+	.when('/confirmed',{
+		templateUrl:'partials/confirmed.html'
+	})
 	.otherwise({
 		redirectTo: '/'
 	});

@@ -20,7 +20,7 @@ var RevAll = require('gulp-rev-all');
 
 var paths = {
   sass : {
-    src : './scss/theme-brown2.scss',
+    src : './scss/main.scss',
     dest : './css',
     watch : './scss/**/*.scss'
   },

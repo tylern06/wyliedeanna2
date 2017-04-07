@@ -1930,9 +1930,6 @@ footer {
 			margin: 0 auto;
 		}
 	}
-	.add-padding-top {
-		padding-top: 40px;
-	}
 	.hide-mobile {
 		display: none;
 	}
@@ -1977,4 +1974,29 @@ footer {
 		margin-bottom: 20px;
 		margin-top: 40px;
 	}
+  .timeline-wrapper {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .timeline-container {
+    text-align: center;
+  }
+  .clearfix {
+    clear: both;
+  }
+}
+
+//lodging and travel
+@include respondTo(phone) {
+  .travel-wrapper {
+    img {
+      max-width: 140px !important;
+      height: auto;
+    }
+  }
+};
+
+.lodging-wrapper {
+  max-width: 200px;
+  margin: 0 auto;
 }
