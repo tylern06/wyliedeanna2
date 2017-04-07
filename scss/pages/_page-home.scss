@@ -2027,3 +2027,15 @@ footer {
 		margin-bottom: 20px;
 	}
 }
+
+@include respondTo(phone) {
+	.wedding-party {
+		.feature {
+			p {
+				max-height: 328px;
+				overflow: scroll;
+			}
+
+		}
+		}
+};

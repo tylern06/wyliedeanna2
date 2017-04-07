@@ -1622,3 +1622,8 @@ footer {
 .proposal img {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  .wedding-party .feature p {
+    max-height: 328px;
+    overflow: scroll; } }
