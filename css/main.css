@@ -1291,9 +1291,6 @@ footer {
   #return-to-top:hover {
     background: rgba(197, 155, 117, 0.9); }
 
-.sub-heading {
-  color: #096D65; }
-
 .wedding-party {
   padding-top: 20px; }
   .wedding-party p {
@@ -1309,7 +1306,7 @@ footer {
   margin-top: 20px; }
 
 .add-padding-top {
-  padding-top: 80px; }
+  padding-top: 120px; }
 
 .add-padding-bottom {
   padding-bottom: 80px; }

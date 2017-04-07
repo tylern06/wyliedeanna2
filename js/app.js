@@ -16,6 +16,9 @@ myAppModule.config(function ($routeProvider, $locationProvider) {
 	.when('/gallery',{
 		templateUrl:'partials/gallery.html'
 	})
+	.when('/registry',{
+		templateUrl:'partials/registry.html'
+	})
 	.when('/rsvp',{
 		templateUrl:'partials/rsvp.html'
 	})
