@@ -20,6 +20,9 @@ myAppModule.controller('mainCtrl', function($scope, $rootScope, mainFactory, $lo
 
 	$scope.sendForm = function() {
 		console.log('sent form', $scope.form)
+		if($scope.form.guests == undefined) {
+			$scope.form.guests = 0;
+		}
 		mainFactory.sendForm($scope.form, function(data) {
 			console.log('received form', data)
 			$location.url('/confirmed');

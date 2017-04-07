@@ -1190,9 +1190,12 @@ nav.light.scrolled {
 	.feature {
 		margin-bottom: 60px;
 	}
-	h2 {
-		// margin-bottom: 60px;
-	}
+	@include respondTo(phone) {
+		h2 {
+			padding-top: 20px;
+		}
+
+	};
 	img {
 		display: inline-block;
 		margin-bottom: 30px;
@@ -1206,6 +1209,11 @@ nav.light.scrolled {
 	h2 {
 		margin-bottom: 120px;
 	}
+	@include respondTo(phone){
+		h2 {
+			padding-top: 20px;
+		}
+	};
 	a {
 		height: 40px;
 		display: block;

@@ -1017,6 +1017,9 @@ nav.light.scrolled .line-3 {
   padding-bottom: 60px; }
   .accom-2 .feature {
     margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .accom-2 h2 {
+      padding-top: 20px; } }
   .accom-2 img {
     display: inline-block;
     margin-bottom: 30px; }
@@ -1026,6 +1029,10 @@ nav.light.scrolled .line-3 {
 
 .registry-1 h2 {
   margin-bottom: 120px; }
+
+@media (max-width: 767px) {
+  .registry-1 h2 {
+    padding-top: 20px; } }
 
 .registry-1 a {
   height: 40px;
