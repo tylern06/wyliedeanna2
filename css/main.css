@@ -1306,6 +1306,10 @@ footer {
 .add-padding-top {
   padding-top: 120px; }
 
+@media (max-width: 767px) {
+  .add-padding-top {
+    padding-top: 50px; } }
+
 .add-padding-bottom {
   padding-bottom: 80px; }
 
