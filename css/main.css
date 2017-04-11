@@ -1027,6 +1027,16 @@ nav.light.scrolled .line-3 {
     color: #096D65;
     margin-bottom: 15px; }
 
+.registry .text-center h2 {
+  margin-bottom: 20px; }
+
+.registry .text-center p {
+  max-width: 700px;
+  margin: 0 auto; }
+
+.registry .registry-icons {
+  margin-top: 50px; }
+
 .registry-1 h2 {
   margin-bottom: 120px; }
 
