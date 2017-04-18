@@ -76,7 +76,8 @@ app.post('/rsvp', function (req,res){
 			console.log('mail options');
 			var mailOptions = {
   				from: '"RSVP" <fernyhoughwedding@zoho.com>',
-			    to: 'deannamdurbin@gmail.com', // list of receivers
+			    // to: 'deannamdurbin@gmail.com', // list of receivers
+          to: 'tynguyen06@gmail.com', // list of receivers
 			    subject: 'Deanna & Wylie Wedding RSVP', // Subject line
 			    text: 'Hey Guys', // plaintext body
 			    html: "<table style='border: 1px solid black;border-collapse: collapse;width: 100%;'><tr><th style='border: 1px solid black;height: 50px;text-align: left;padding: 15px;'>Name</th><th style='border: 1px solid black;height: 50px;text-align: left;padding: 15px;'>RSVP</th><th style='border: 1px solid black;height: 50px;text-align: left;padding: 15px;'># of Guests</th><th style='border: 1px solid black;height: 50px;text-align: left;padding: 15px;'>Song Request</th><th style='border: 1px solid black;height: 50px;text-align: left;padding: 15px;'>Allergies</th></tr><tr><td style='border: 1px solid black;padding: 15px;text-align: left;'>" + req.body.name + "</td><td style='border: 1px solid black;padding: 15px;text-align: left;'>" + req.body.rsvp + "</td><td style='border: 1px solid black;padding: 15px;text-align: left;'>" + req.body.guests + "</td><td style='border: 1px solid black;padding: 15px;text-align: left;'>"+ req.body.song + "</td><td style='border: 1px solid black;padding: 15px;text-align: left;'>" + req.body.allergies + "</td></tr></table>"

@@ -55,7 +55,8 @@ myAppModule.directive('lightgallery', function() {
           element.parent().justifiedGallery({
             border: 10,
             rowHeight: 250,
-            margins: 10
+            margins: 10,
+						captions: false,
           });
         }, 100);
 
