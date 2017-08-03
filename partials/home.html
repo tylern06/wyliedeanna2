@@ -1,40 +1,43 @@
 <script type="text/javascript">
-  $(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200);    // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-        }
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {
+      // If page is scrolled more than 50px
+      $("#return-to-top").fadeIn(200); // Fade in the arrow
+    } else {
+      $("#return-to-top").fadeOut(200); // Else fade out the arrow
+    }
+  });
+  $("#return-to-top").click(function() {
+    // When arrow is clicked
+    $("body,html").animate(
+      {
+        scrollTop: 0 // Scroll to top of body
+      },
+      500
+    );
+  });
+
+  $(".background-image-holder").each(function() {
+    var imgSrc = $(this).children("img").attr("src");
+    $(this).css("background", 'url("' + imgSrc + '")');
+    // $(this).children('img').hide();
+  });
+
+  // Fade in background images
+
+  setTimeout(function() {
+    $(".background-image-holder").each(function() {
+      $(this).addClass("fadeIn");
     });
-    $('#return-to-top').click(function() {      // When arrow is clicked
-        $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
-        }, 500);
+    $(".header.fadeContent").each(function() {
+      $(this).addClass("fadeIn");
     });
-
-        $('.background-image-holder').each(function() {
-            var imgSrc = $(this).children('img').attr('src');
-            $(this).css('background', 'url("' + imgSrc + '")');
-            // $(this).children('img').hide();
-        });
-
-        // Fade in background images
-
-        setTimeout(function() {
-            $('.background-image-holder').each(function() {
-                $(this).addClass('fadeIn');
-            });
-            $('.header.fadeContent').each(function() {
-                $(this).addClass('fadeIn');
-            });
-        }, 200);
-        $('.image-slider').flexslider({
-            directionNav: false
-        });
-
-  })
-
+  }, 200);
+  $(".image-slider").flexslider({
+    directionNav: false
+  });
+});
 </script>
 
 
@@ -83,7 +86,7 @@
           <div class="row schedule">
             <img id='top-leaf' src="img/TOP-LEFT-LEAF.png" alt="">
             <div class="col-sm-12">
-              <div class="text-centr">
+              <div class="text-center">
                 <h2>Ceremony &amp; Reception</h2>
                 <p><b>Salty's on Alki Beach</b>
                 <br>Friday, August 4th 2017
@@ -91,6 +94,10 @@
                 <a href="https://www.google.com/maps/dir//1936+Harbor+Ave+SW,+Seattle,+WA+98126/@47.5865257,-122.4464596,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5490406d03944fbb:0x1297bfe1e5f83ec7!2m2!1d-122.3764203!2d47.586547" target="_blank">1936 Harbor Ave SW<br>Seattle, WA 98126</a> <br></p>
 
                 <b>Attire</b><br> Summertime Fly<br>
+                <div class="info">
+                  <b>Men:</b> Chinos/slacks, collared shirt (no shorts or jeans or black suits)</br>
+                  <b>Ladies: </b> Dresses, skirts & blouse (no shorts or jeans or white dresses)
+                </div>
               </div>
             </div>
             <img id='bottom-leaf' src="img/BOTTOM-RIGHT-LEAF.png" alt="">
